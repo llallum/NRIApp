@@ -13,14 +13,14 @@ setup(
    author='Llallum Victoria',
    author_email='llallumvictoria@gmail.com',
 #   packages=find_packages('chrome'),
-   package_dir = {'':'setup'},
+   package_dir = {'':'src'},
     
    packages=['.', 'config', 'core', 'helper'],  #same as name
 #   packages=find_packages(exclude=['ez_setup', 'tests', 'tests.*']),
-   data_files=[('', ['./setup/requirements.txt', './setup/changelog.txt']),
-               ('./session', glob('./setup/session/*.*')),
-               ('./logs', glob('./setup/logs/*.*')),
-               ('./output', glob('./setup/output/*.*'))
+   data_files=[('', ['./src/requirements.txt', './src/changelog.txt']),
+               ('./session', glob('./src/session/*.*')),
+               ('./logs', glob('./src/logs/*.*')),
+               ('./output', glob('./src/output/*.*'))
 
                ],
    #setup_requires=['session', 'logs', 'output'],

@@ -1,0 +1,102 @@
+﻿11/30/2022 4:40:43 AM
+	- Added support for MCAS events
+	- Added sources on alert class
+	- Separate all the sources
+	- Todo - MS 365 Defender support
+	- Pending  [9613]  'Bearfoos' detected on one endpoint reported by multiple sources
+
+12/1/2022 6:27:41 AM
+	- Added support for MCAS events 
+	- MS 365 Alerts
+	- Todo gmail-python							(not done yet)
+	- 7267 - No alerts
+
+12/1/2022 4:51:05 PM
+	- todo need HTTP error 440 for Session Timeout (not done yet)
+	- Added support for Manual sources
+
+12/2/2022 9:33:56 PM
+	- Serialize MCAS alerts
+	- Todo - Logging
+
+12/8/2022 7:59:29 PM
+	- Separate all the classes to each file
+	- Create a folder "./session" for the storage of its sessions
+
+12/9/2022 12:19:24 AM
+	- Fixed email subject that outputs recipient
+
+12/9/2022 10:08:43 PM
+	- get_associated_alerts
+	- Exception handling is needed (('Connection aborted.', TimeoutError(10060, 'A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond', None, 10060, None)))
+
+12/10/2022 12:56:38 AM
+	- https://security.microsoft.com/apiproxy/mtp/alertsApiService/alerts/fa5c956e2e-764b-0c95-b600-08dad9ffaedd
+	- 10855 Email messages containing malicious URL removed after delivery​
+	- URLs are not perfectly retrieved in alert story so need to parse it with another source
+
+1/14/2023 4:36:20 AM
+	- Fixes associated alerts payload json
+
+1/21/2023 9:08:10 PM
+	- Added filter and fixes few in MailMessage type
+
+1/22/2023 2:55:58 AM
+	- To do
+	- 153 [11558]  Increase in data usage by an overprivileged or highly privileged app (unsupported alert type)
+	- 39 [11851]  Multi-stage incident involving Initial access & Lateral movement on one endpoint reported by multiple sources
+
+1/22/2023 3:35:08 AM 
+	- Fixed line 
+
+1/24/2023 7:37:15 PM
+	- 241 [11558]  Increase in data usage by an overprivileged or highly privileged app
+	- Need fix
+	- Exception: Alert Id not supported mafa04d04b-5bb3-4e0f-8bf8-b70b04c06073 
+
+1/25/2023 11:41:32 PM
+	- Need fix on 11391
+
+ 1/26/2023 3:26:31 AM
+	-AppCloudEvent
+	-145 [11851]  Multi-stage incident involving Initial access & Lateral movement on one endpoint reported by multiple sources
+
+1/26/2023 7:52:49 AM
+	- Fixed 145 [11851]
+	- Unsupported Token (temporary) Exception: Alert Id not supported mafa04d04b-5bb3-4e0f-8bf8-b70b04c06073 
+	- Added PyLog for logging each module debug outputs
+
+1/27/2023 2:33:58 AM
+	- Switched from PyLog to loguru (Open source logging)
+	- Fixes MSGraph
+
+1/27/2023 5:00:48 PM
+	- Fixes MSGraph request with new update on MS 
+	- api/DelegationToken
+
+
+    #10457 -cve 
+    #10416 - 7zip 
+    #10400-process 
+    #10437 zip 
+    #6451  ransomware
+    #10450 email 
+    #10488 attachhment
+    #9930 powershell
+    #10344 Automated investigated started manually
+    #10315 DEV-0651 threat group activity associated with FakeUpdates JavaScript backdoor including Ransomware on one endpoint
+    #10302 Unsanctioned cloud app access was blocked
+    #10345 Multi-stage incident involving Execution & Persistence on one endpoint  <<<
+    #10223 Unusual number of failed sign-in attempts on one endpoint
+    #10260 No evidences  CandyOpen' unwanted software was prevented on one endpoint
+    #10276 - registry
+    #10315
+    #10495
+    #10594 - Skinprogress
+    #8642 - Multi-stage incident involving Initial access & Credential access on one endpoint reported by multiple sources
+    #8745 - 
+    #9613
+	#9985   A user clicked through to a potentially malicious URL​ (No URL)
+
+2/2/2023 8:29:27 AM
+	#12107 Error
